@@ -1,0 +1,33 @@
+{
+  "buy-together": {
+    "component": "BuyTogether",
+    "allowed": ["product-summary"],
+    "composition": "children"
+  },
+  "buy-together-product-list": {
+    "allowed": ["product-summary"],
+    "component": "ProductsList"
+  },
+  "buy-together-total": {
+    "component": "Value"
+  },
+  "buy-together-current-product": {
+    "allowed": ["product-summary"],
+    "component": "CurrentProduct"
+  },
+  "buy-together-installments": {
+    "component": "Installments"
+  },
+  "buy-together-buy-button": {
+    "component": "BuyButton"
+  },
+  "buy-together-title": {
+    "component": "Title"
+  },
+  "buy-together-message": {
+    "component": "Message"
+  },
+  "buy-together-discount": {
+    "component": "Discount"
+  }
+}

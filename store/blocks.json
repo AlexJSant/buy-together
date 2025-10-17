@@ -1,0 +1,54 @@
+{
+  "buy-together": {
+    "children": ["flex-layout.col#buyTogetherContent"]
+  },
+  "flex-layout.col#buyTogetherContent": {
+    "children": ["buy-together-title", "flex-layout.row#buyTogetherContainer"]
+  },
+  "flex-layout.row#buyTogetherContainer": {
+    "children": [
+      "buy-together-current-product",
+      "flex-layout.col#icon-plus",
+      "buy-together-product-list",
+      "flex-layout.col#icon-equals",
+      "flex-layout.col#buyTogetherInformation"
+    ]
+  },
+  "flex-layout.col#icon-plus": {
+    "children": ["icon-plus"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#icon-equals": {
+    "children": ["icon-equals"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+  "buy-together-current-product": {
+    "blocks": ["product-summary.shelf"]
+  },
+  "buy-together-product-list": {
+    "blocks": ["product-summary.shelf"]
+  },
+  "flex-layout.col#buyTogetherInformation": {
+    "children": [
+      "buy-together-message",
+      "buy-together-total",
+      "buy-together-installments",
+      "buy-together-buy-button"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "buy-together-info"
+    }
+  },
+  "buy-together-buy-button": {
+    "props": {
+      "BuyButton": "add-to-cart-button"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+query getProducts($skuId: [ID!]) {
+  productsByIdentifier(field: sku, values: $skuId)
+    @context(provider: "vtex.search-graphql") {
+    brand
+    brandId
+    cacheId
+    categoryTree {
+      slug
+    }
+    description
+    items {
+      images {
+        imageLabel
+        imageTag
+        imageUrl
+      }
+      itemId
+      measurementUnit
+      name
+      sellers {
+        commertialOffer {
+          AvailableQuantity
+          Installments {
+            InterestRate
+            Name
+            NumberOfInstallments
+            TotalValuePlusInterestRate
+            Value
+          }
+          ListPrice
+          Price
+          PriceWithoutDiscount
+          Tax
+          discountHighlights {
+            name
+          }
+          taxPercentage
+          teasers {
+            name
+          }
+        }
+        sellerId
+      }
+      unitMultiplier
+      variations {
+        name
+        values
+      }
+    }
+    link
+    linkText
+    priceRange {
+      listPrice {
+        highPrice
+        lowPrice
+      }
+      sellingPrice {
+        highPrice
+        lowPrice
+      }
+    }
+    productClusters {
+      id
+      name
+    }
+    productId
+    productName
+    productReference
+    properties {
+      name
+      values
+    }
+    specificationGroups {
+      name
+      specifications {
+        name
+        values
+      }
+    }
+    brand
+    brandId
+    cacheId
+    categoryId
+    description
+    link
+    linkText
+    productId
+    productName
+    productReference
+    titleTag
+    metaTagDescription
+    jsonSpecifications
+    releaseDate
+    items {
+      itemId
+      name
+      nameComplete
+      complementName
+      ean
+      measurementUnit
+      unitMultiplier
+      estimatedDateArrival
+      sellers {
+        sellerId
+        sellerName
+        addToCartLink
+        sellerDefault
+      }
+      kitItems {
+        itemId
+        amount
+      }
+    }
+  }
+}

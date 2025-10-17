@@ -1,0 +1,435 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "scripts": {
+        "test": "vtex-test-tools test"
+      },
+      "dependencies": {
+        "@vtex/css-handles": "^1.0.0",
+        "apollo-link-rest": "^0.8.0-beta.0",
+        "axios": "^0.21.1",
+        "classnames": "^2.2.6",
+        "ramda": "^0.26.1",
+        "react": "^16.12.0",
+        "react-apollo": "^3.1.3",
+        "react-dom": "^16.12.0",
+        "react-intl": "^3.12.0",
+        "swiper": "^6.7.0"
+      },
+      "devDependencies": {
+        "@apollo/react-testing": "^3.1.3",
+        "@types/classnames": "^2.2.7",
+        "@types/jest": "^24.0.18",
+        "@types/node": "^12.7.5",
+        "@types/prop-types": "^15.7.0",
+        "@types/ramda": "^0.26.5",
+        "@types/react": "^16.9.31",
+        "@types/react-slick": "^0.23.4",
+        "@vtex/test-tools": "^3.3.2",
+        "@vtex/tsconfig": "^0.4.4",
+        "agenciaeplus.buy-together": "https://ajustes--editoragente.myvtex.com/_v/private/typings/linked/v1/agenciaeplus.buy-together@0.1.5+build1652368398/public/@types/agenciaeplus.buy-together",
+        "apollo-cache-inmemory": "^1.6.5",
+        "apollo-client": "^2.5.1",
+        "graphql": "^14.6.0",
+        "typescript": "3.9.7",
+        "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button",
+        "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles",
+        "vtex.flex-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.19.0/public/@types/vtex.flex-layout",
+        "vtex.format-currency": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.format-currency@0.3.0/public/@types/vtex.format-currency",
+        "vtex.native-types": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.8.0/public/@types/vtex.native-types",
+        "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
+        "vtex.product-group-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-group-context@0.2.0/public/@types/vtex.product-group-context",
+        "vtex.product-list-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list-context@0.4.1/public/@types/vtex.product-list-context",
+        "vtex.product-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.79.1/public/@types/vtex.product-summary",
+        "vtex.product-summary-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.9.0/public/@types/vtex.product-summary-context",
+        "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
+        "vtex.search-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.48.0/public/@types/vtex.search-graphql",
+        "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.1/public/@types/vtex.slider-layout",
+        "vtex.store-icons": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons",
+        "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide"
+      }
+    },
+    "prefix": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "C:\\Users\\LV-SS\\AppData\\Local\\pnpm\\store\\v3",
+    "virtualStoreDir": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "@ajustes--editoragente.myvtex.com/_v/private/typings/linked/v1/agenciaeplus.buy-together@0.1.5+build1652368398/public/@types/agenciaeplus.buy-together",
+    "wanted": {
+      "dependentId": ".",
+      "name": "agenciaeplus.buy-together",
+      "rawSpec": "https://ajustes--editoragente.myvtex.com/_v/private/typings/linked/v1/agenciaeplus.buy-together@0.1.5+build1652368398/public/@types/agenciaeplus.buy-together"
+    }
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.add-to-cart-button",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button"
+    }
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.css-handles",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles"
+    }
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.19.0/public/@types/vtex.flex-layout",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.flex-layout",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.19.0/public/@types/vtex.flex-layout"
+    }
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.format-currency@0.3.0/public/@types/vtex.format-currency",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.format-currency",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.format-currency@0.3.0/public/@types/vtex.format-currency"
+    }
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.8.0/public/@types/vtex.native-types",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.native-types",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.8.0/public/@types/vtex.native-types"
+    }
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.product-context",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context"
+    }
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.product-group-context@0.2.0/public/@types/vtex.product-group-context",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.product-group-context",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-group-context@0.2.0/public/@types/vtex.product-group-context"
+    }
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list-context@0.4.1/public/@types/vtex.product-list-context",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.product-list-context",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list-context@0.4.1/public/@types/vtex.product-list-context"
+    }
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.79.1/public/@types/vtex.product-summary",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.product-summary",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.79.1/public/@types/vtex.product-summary"
+    }
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.9.0/public/@types/vtex.product-summary-context",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.product-summary-context",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.9.0/public/@types/vtex.product-summary-context"
+    }
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.render-runtime",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime"
+    }
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.48.0/public/@types/vtex.search-graphql",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.search-graphql",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.48.0/public/@types/vtex.search-graphql"
+    }
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.1/public/@types/vtex.slider-layout",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.slider-layout",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.1/public/@types/vtex.slider-layout"
+    }
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.store-icons",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons"
+    }
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vtex.styleguide",
+      "rawSpec": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide"
+    }
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/typescript/3.9.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "typescript",
+      "rawSpec": "3.9.7"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/typescript/3.9.7",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/react-slick/0.23.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/react-slick",
+      "rawSpec": "^0.23.4"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/react-slick/0.23.8",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/prop-types/15.7.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/prop-types",
+      "rawSpec": "^15.7.0"
+    }
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/prop-types/15.7.5",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/classnames/2.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/classnames",
+      "rawSpec": "^2.2.7"
+    }
+  },
+  "27 debug pnpm:deprecation": {
+    "deprecated": "This is a stub types definition. classnames provides its own type definitions, so you do not need this installed.",
+    "depth": 0,
+    "pkgId": "registry.npmjs.org/@types/classnames/2.3.1",
+    "pkgName": "@types/classnames",
+    "pkgVersion": "2.3.1",
+    "prefix": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react"
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/classnames/2.3.1",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "29 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/apollo-link-rest/0.8.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "apollo-link-rest",
+      "rawSpec": "^0.8.0-beta.0"
+    }
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link-rest/0.8.0",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "31 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/apollo-cache-inmemory/1.6.6",
+    "wanted": {
+      "dependentId": ".",
+      "name": "apollo-cache-inmemory",
+      "rawSpec": "^1.6.5"
+    }
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-cache-inmemory/1.6.6",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "33 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@apollo/react-testing/3.1.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@apollo/react-testing",
+      "rawSpec": "^3.1.3"
+    }
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@apollo/react-testing/3.1.4",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "35 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/apollo-client/2.6.10",
+    "wanted": {
+      "dependentId": ".",
+      "name": "apollo-client",
+      "rawSpec": "^2.5.1"
+    }
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-client/2.6.10",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "37 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/graphql/14.7.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "graphql",
+      "rawSpec": "^14.6.0"
+    }
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graphql/14.7.0",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "39 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/12.20.52",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/node",
+      "rawSpec": "^12.7.5"
+    }
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/12.20.52",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "41 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/jest/24.9.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/jest",
+      "rawSpec": "^24.0.18"
+    }
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/jest/24.9.1",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "43 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@vtex/test-tools/3.4.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@vtex/test-tools",
+      "rawSpec": "^3.3.2"
+    }
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@vtex/test-tools/3.4.3",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "45 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/ramda/0.26.44",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/ramda",
+      "rawSpec": "^0.26.5"
+    }
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/ramda/0.26.44",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "47 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/react/16.14.26",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/react",
+      "rawSpec": "^16.9.31"
+    }
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/react/16.14.26",
+    "requester": "C:\\Users\\LV-SS\\Code\\e-plus\\io\\apps\\buy-together\\react",
+    "status": "resolved"
+  },
+  "49 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles",
+    "size": 1776,
+    "status": "started"
+  },
+  "50 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.format-currency@0.3.0/public/@types/vtex.format-currency",
+    "size": 704,
+    "status": "started"
+  },
+  "51 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.19.0/public/@types/vtex.flex-layout",
+    "size": 1699,
+    "status": "started"
+  },
+  "52 error pnpm": {
+    "code": "ERR_PNPM_MISSING_PACKAGE_NAME",
+    "err": {
+      "name": "pnpm",
+      "message": "Can't install http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles: Missing package name",
+      "code": "ERR_PNPM_MISSING_PACKAGE_NAME",
+      "stack": "pnpm: Can't install http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles: Missing package name\n    at resolveDependency (C:\\Users\\LV-SS\\AppData\\Local\\pnpm\\global\\5\\.pnpm\\pnpm@7.1.2\\node_modules\\pnpm\\dist\\pnpm.cjs:115863:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async resolveDependenciesOfDependency (C:\\Users\\LV-SS\\AppData\\Local\\pnpm\\global\\5\\.pnpm\\pnpm@7.1.2\\node_modules\\pnpm\\dist\\pnpm.cjs:115639:39)\n    at async Promise.all (index 16)\n    at async resolveDependencies (C:\\Users\\LV-SS\\AppData\\Local\\pnpm\\global\\5\\.pnpm\\pnpm@7.1.2\\node_modules\\pnpm\\dist\\pnpm.cjs:115607:29)\n    at async C:\\Users\\LV-SS\\AppData\\Local\\pnpm\\global\\5\\.pnpm\\pnpm@7.1.2\\node_modules\\pnpm\\dist\\pnpm.cjs:116115:47\n    at async Promise.all (index 0)\n    at async default_1 (C:\\Users\\LV-SS\\AppData\\Local\\pnpm\\global\\5\\.pnpm\\pnpm@7.1.2\\node_modules\\pnpm\\dist\\pnpm.cjs:116086:7)\n    at async default_1 (C:\\Users\\LV-SS\\AppData\\Local\\pnpm\\global\\5\\.pnpm\\pnpm@7.1.2\\node_modules\\pnpm\\dist\\pnpm.cjs:117757:133)\n    at async _installInContext (C:\\Users\\LV-SS\\AppData\\Local\\pnpm\\global\\5\\.pnpm\\pnpm@7.1.2\\node_modules\\pnpm\\dist\\pnpm.cjs:120309:238)"
+    }
+  },
+  "53 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button",
+    "size": 1745,
+    "status": "started"
+  },
+  "54 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
+    "size": 17338,
+    "status": "started"
+  },
+  "55 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.8.0/public/@types/vtex.native-types",
+    "size": 753,
+    "status": "started"
+  },
+  "56 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "@vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
+    "size": 2908,
+    "status": "started"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "editor.buy-together.title": "Comprar juntos",
+  "editor.buy-together.description": "Comprar juntos componente",
+  "admin/editor.buy-together.installments.description": "Valores disponibles para interpolación: '{installmentsNumber}, {installmentValue}, {installmentsTotalValue}, {interestRate}, {hasInterest}, {paymentSystemName}'",
+  "admin/editor.buy-together.installments.title": "Cuotas",
+  "admin/editor.buy-together.installments-list-item.title": "Cuotas",
+  "store/buy-together.installments.default": "Hasta {installmentsNumber}x {installmentValue}{hasInterest, select, true {, {interestRate} de interés} false { sin interés}}"
+}
