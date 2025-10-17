@@ -8,6 +8,8 @@ export interface BuyTogetherContextProps {
   simplifiedTotalPrice: number
   totalPrice: number
   setTotalPrice: Function
+  customText: string
+  showCustomText: boolean
 }
 
 export const BuyTogetherContextDefault = {
@@ -18,6 +20,8 @@ export const BuyTogetherContextDefault = {
   simplifiedTotalPrice: 0,
   totalPrice: 0,
   setTotalPrice: () => {},
+  customText: 'PIX',
+  showCustomText: false,
 }
 
 export const BuyTogetherContext = React.createContext<BuyTogetherContextProps>(

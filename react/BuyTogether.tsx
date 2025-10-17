@@ -41,6 +41,9 @@ interface BuyTogetherProps {
   showAllSkus?: boolean
   children: ReactNode
   preferredSKU: PreferenceType
+  discountPercentage?: number
+  customText?: string
+  showCustomText?: boolean
 }
 
 const notNull = (item: CartItem | null): item is CartItem => item !== null
@@ -51,6 +54,9 @@ const BuyTogether: StorefrontFunctionComponent = ({
   children,
   showAllSkus = false,
   preferredSKU = 'FIRST_AVAILABLE',
+  discountPercentage = 0,
+  customText = 'PIX',
+  showCustomText = true,
 }: BuyTogetherProps) => {
   const productContext = useProduct() as any
   const { product } = productContext
@@ -146,10 +152,21 @@ const BuyTogether: StorefrontFunctionComponent = ({
   }, [items])
 
   const simplifiedTotalPrice = useMemo(() => {
-    return cartItems?.reduce((total: number, currentItem: CartItem) => {
-      return total + currentItem.sellingPrice / 100
+    if (!cartItems) return 0
+
+    return cartItems.reduce((total: number, currentItem: CartItem) => {
+      const itemPrice = currentItem.sellingPrice / 100
+      
+      // Aplicar desconto em cada produto individualmente
+      if (discountPercentage > 0) {
+        const discountAmount = (itemPrice * discountPercentage) / 100
+        const discountedPrice = itemPrice - discountAmount
+        return total + discountedPrice
+      }
+
+      return total + itemPrice
     }, 0)
-  }, [cartItems])
+  }, [cartItems, discountPercentage])
 
   const handleSlideChange = (e: any) => {
     setCurrentItens(Number(e.activeIndex))
@@ -168,6 +185,8 @@ const BuyTogether: StorefrontFunctionComponent = ({
         simplifiedTotalPrice: Number(simplifiedTotalPrice),
         totalPrice: Number(totalPrice),
         setTotalPrice,
+        customText,
+        showCustomText,
       }}
     >
       <ProductListProvider listName="buyTogether">
@@ -179,12 +198,6 @@ const BuyTogether: StorefrontFunctionComponent = ({
   )
 }
 
-BuyTogether.schema = {
-  title: 'editor.BuyTogether.title',
-  description: 'editor.BuyTogether.description',
-  type: 'object',
-  properties: {},
-}
 
 const BuyTogetherWrapper: StorefrontFunctionComponent = props => {
   return (
@@ -195,10 +208,31 @@ const BuyTogetherWrapper: StorefrontFunctionComponent = props => {
 }
 
 BuyTogetherWrapper.schema = {
-  title: 'editor.BuyTogether.title',
-  description: 'editor.BuyTogether.description',
+  title: 'Compre Junto',
+  description: 'Componente custom de Compre Junto',
   type: 'object',
-  properties: {},
+  properties: {
+    discountPercentage: {
+      title: 'Percentual de Desconto',
+      description: 'Percentual de desconto a ser aplicado no preço final (0-100)',
+      type: 'number',
+      default: 7,
+      minimum: 0,
+      maximum: 20,
+    },
+    customText: {
+      title: 'Texto Personalizado',
+      description: 'Texto que será exibido ao lado do preço (ex: PIX, à vista, etc.)',
+      type: 'string',
+      default: 'PIX',
+    },
+    showCustomText: {
+      title: 'Exibir Texto Personalizado?',
+      description: 'Se deve exibir o campo Texto Personalizado ao lado do preço',
+      type: 'boolean',
+      default: true,
+    },
+  },
 }
 
 export default BuyTogetherWrapper

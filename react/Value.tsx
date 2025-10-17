@@ -23,6 +23,7 @@ const CSS_HANDLES = [
   'arrowNext',
   'arrowPrev',
   'arrow',
+  'customText',
 ]
 
 interface BuyTogetherValueProps {
@@ -38,6 +39,8 @@ const BuyTogetherValue: React.FC<BuyTogetherValueProps> = ({
   const { handles } = useCssHandles(CSS_HANDLES)
   const {
     simplifiedTotalPrice,
+    customText,
+    showCustomText,
   } = useBuyTogether()
 
   // useEffect(() => {
@@ -74,7 +77,14 @@ const BuyTogetherValue: React.FC<BuyTogetherValueProps> = ({
         message={message}
         markers={markers}
         values={{
-          totalPrice: <FormattedCurrency value={simplifiedTotalPrice} key="totalPrice" />,
+          totalPrice: (
+            <span key="totalPrice">
+              <FormattedCurrency value={simplifiedTotalPrice} />
+              {showCustomText && customText && (
+                <span className={`${handles.customText}`}> {customText}</span>
+              )}
+            </span>
+          ),
         }}
       />
     </p>
